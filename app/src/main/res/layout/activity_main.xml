@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Mensagem de Carregamento -->
+    <TextView
+        android:id="@+id/loading_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carregando..."
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:visibility="visible"/>
+
+    <!-- RecyclerView para listar criptomoedas -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/crypto_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:visibility="gone"/>
+
+    <!-- Barra de Navegação Inferior -->
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:hideOnScroll="true"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="10dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
